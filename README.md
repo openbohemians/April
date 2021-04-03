@@ -30,24 +30,29 @@ Range
 
     3 # 4 = 3 4 5 6
 
-Rank
+# Rank
 
     1 2 3 4 ° 2 = ( 1 2 ) ( 3 4 )
 
-Indexing
+# Matrix Math
+
+    1 2 ™ × 3 4 = ( 3 6 ) ( 4 8 )
+
+# Indexing
 
     1 2 3 @ 1 = 1
 
     1 2 3 4 ° 2 @ 2 1 = 3
 
-Iteratives
+# Iteratives
 
-    1 2 3 ] + = 6
+    3 2 1 ] - = 0
 
-    3 | * 2 . # 4 = 48
+    2 3 6 [ - =  1
 
+    3 ][ * 2 . # 4 = 48
 
-Boolean Logic
+# Boolean Logic
 
     O (+) 0 = 0
     1 (+) 0 = 1
@@ -57,23 +62,31 @@ Boolean Logic
     0 (×) 0 = 0
     1 (×) 0 = 0
     0 (×) 1 = 0
-    1 (×) 1 = 0
+    1 (×) 1 = 1
 
     0 (^) 0 = 0
     1 (^) 0 = 1
     0 (^) 1 = 1
     1 (^) 1 = 0
 
-Regular number admit to bollean logic as well thru their binary representation.
+Regular numbers admit to boolean logic as well thru their binary representation.
 
-    14 (+) 1 = 16
+    14 (+) 1 = 15
+    14 (×) 1 = 0
 
+# Control Flow
 
+TODO: How to do if and if-else?
 
-Derivatives and Integrals
+    0 { 2 = 0
+    1 { 2 = 2
 
-    ( x ^ 2 ) ' x = ( 2 × x )££
+# Derivatives and Integrals
+
+    ( x ^ 2 ) ' x = ( 2 × x )
 
     ( 2 × x ) | x = ( x ^ 2 )
 
+# Statistics ?
 
+    ( x | 1 ) + ( y | 0 ) = x
