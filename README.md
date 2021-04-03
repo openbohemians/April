@@ -28,6 +28,8 @@ Range
 
     1 ... 5 = 1 2 3 4 5
 
+    3 # 4 = 3 4 5 6
+
 Rank
 
     1 2 3 4 ° 2 = ( 1 2 ) ( 3 4 )
@@ -57,7 +59,21 @@ Boolean Logic
     0 (×) 1 = 0
     1 (×) 1 = 0
 
-Derivatives
+    0 (^) 0 = 0
+    1 (^) 0 = 1
+    0 (^) 1 = 1
+    1 (^) 1 = 0
 
-    ( x ^ 2 ) ' x = ( 2 × x )
+Regular number admit to bollean logic as well thru their binary representation.
+
+    14 (+) 1 = 16
+
+
+
+Derivatives and Integrals
+
+    ( x ^ 2 ) ' x = ( 2 × x )££
+
+    ( 2 × x ) | x = ( x ^ 2 )
+
 
