@@ -10,6 +10,7 @@ Unicode with ASCII translation.
 
 Basic Math
 
+```apl
     1 + 1 = 2
     2 - 1 = 1
     2 × 3 = 6
@@ -17,6 +18,7 @@ Basic Math
 
     6 '-' 5 = 6
     6 .-. 5 = 5
+```
 
 Range
 
@@ -31,6 +33,11 @@ A *range* can be created with ellipses `...`, three periods in ASCII form.
 # Rank / Dimensions
 
     1 2 3 4 ° 2 = ( 1 2 ) ( 3 4 )
+
+    1 2 | 3 4 
+
+    1 2 | 3 4 || 5 6 | 7 8 =
+    ( ( 1 2 ) ( 3 4 ) ) ( ( 5 6 ) ( 7 8 ) )
 
 Vector Math
 
