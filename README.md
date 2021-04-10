@@ -119,12 +119,15 @@ TODO: How to do if and if-else?
 
 Text is stored in trees.
 
-    "Hello" <- "!" = "Hello!"
+    "Hello" >< "!" = "Hello!"
 
-    "Hello" - "l" = "Heo"
+    "Hello" <- "l" = "Heo"
 
     "Hello" # "l" = 2
 
     "Hello" @ 1 = "H"
 
     
+# FUNCTIONS
+
+    *+ -> a * u + u .
