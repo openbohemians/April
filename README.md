@@ -8,41 +8,60 @@ All objects are tensors.
 
 Unicode with ASCII translation.
 
-Basic Math
+# Basic Math
 
 ```apl
-    1 + 1 = 2
-    2 - 1 = 1
-    2 × 3 = 6
-    6 ÷ 3 = 2
+1 + 1 = 2
+2 - 1 = 1
+2 • 3 = 6
+6 ÷ 3 = 2
 
-    6 '-' 5 = 6
-    6 .-. 5 = 5
+6 /\ 5 = 6
+6 \/ 5 = 5
 ```
 
-Range
+# Sequences
 
-    0 * 3 = 0 0 0
+Simple repetitive sequence.
+
+```apl
+0 * 3 = 0 0 0
+
+1 2 * 3 = 1 2 1 2 1 2
+```
 
 A *range* can be created with ellipses `...`, three periods in ASCII form.
 
-    1 ... 5 = 1 2 3 4 5
+```
+1 ... 5 = 1 2 3 4 5
+```
 
-    3 # 4 = 3 4 5 6
+The second argument can be an open function, which then acts as an iterator.
+
+ ```apl
+1 ... ( • 2 ) * 3 = 2 4 8
+```
+
+```apl
+ 3 # 4 = 3 4 5 6
+```
 
 # Rank / Dimensions
 
+```apl
     1 2 3 4 ° 2 = ( 1 2 ) ( 3 4 )
 
     1 2 | 3 4 
 
     1 2 | 3 4 || 5 6 | 7 8 =
     ( ( 1 2 ) ( 3 4 ) ) ( ( 5 6 ) ( 7 8 ) )
+```
 
-Vector Math
+# Vector Math
 
 Basic math operations applied to tensors are elementwise..
 
+```apl
     1 2 3 + 1 = 2 3 4 
 
     1 2 3 + 1 2 3 = 2 4 6
@@ -50,6 +69,7 @@ Basic math operations applied to tensors are elementwise..
     1 2 3 × 2 = 2 4 6
 
     1 2 3 × 1 2 3 = 1 4 9
+```
 
 # Matrix Math
 
