@@ -20,6 +20,24 @@ Unicode with ASCII translation.
 6 \/ 5 = 5
 ```
 
+# Vector Math
+
+Basic math operations applied to vectors are elementwise..
+
+```apl
+1 2 3 + 1
+= 2 3 4 
+
+1 2 3 + 1 2 3
+= 2 4 6
+
+1 2 3 × 2 
+= 2 4 6
+
+1 2 3 × 1 2 3
+= 1 4 9
+```
+
 # Sequences
 
 Simple repetitive sequence.
@@ -57,20 +75,6 @@ The second argument can be an open function, which then acts as an iterator.
     ( ( 1 2 ) ( 3 4 ) ) ( ( 5 6 ) ( 7 8 ) )
 ```
 
-# Vector Math
-
-Basic math operations applied to tensors are elementwise..
-
-```apl
-    1 2 3 + 1 = 2 3 4 
-
-    1 2 3 + 1 2 3 = 2 4 6
-
-    1 2 3 × 2 = 2 4 6
-
-    1 2 3 × 1 2 3 = 1 4 9
-```
-
 # Matrix Math
 
 Transpose a vector or matrix with `™` or superscript `T`.
@@ -83,9 +87,11 @@ This is of course the dot or scalar product, which we can also write using a mid
 
 # Indexing
 
-    1 2 3 @ 1 = 1
+1 2 3 @ 1 = 1
 
-    1 2 3 4 ° 2 @ 2 1 = 3
+1 2 3 4 ° 2 @ 2 = 3 4
+
+1 2 3 4 ° 2 @ 2 1 = 3
 
 # Iteratives
 
