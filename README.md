@@ -85,6 +85,40 @@ This is of course the dot or scalar product, which we can also write using a mid
 
     1 2 • 3 4 = 11
 
+# Rotation
+
+```apl
+1 2 | 3 4 () 2 
+```
+
+The rotation operator transforms the tensor such
+that the second dimension, hence `2` as the operand,
+becomes the first dimension.
+
+```
+1  2        3  1
+       ->
+3  4        4  2
+```
+
+This is a clockwise rotation. We can negate the
+dimesion operand to rotate counter-clockwise.
+
+For higher dimensional tensors, any rotational
+orientation becomes possible by successive calls
+of the rotation operator. But of course, we can 
+simplify this by using a vector.
+
+```apl
+v () 2 3 = v () 2 () 3
+```
+
+It is important to keep in mind that even tensors
+with lower rank can be oriented into higher dimensions.
+The simple example is a row vector becoming a column
+vector.
+
+
 # Indexing
 
 1 2 3 @ 1 = 1
