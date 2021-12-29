@@ -8,6 +8,8 @@ All objects are tensors.
 
 Unicode with ASCII translation.
 
+Built on Beam.
+
 # Basic Math
 
 ```apl
@@ -16,6 +18,8 @@ Unicode with ASCII translation.
 2 • 3 = 6
 6 ÷ 3 = 2
 
+
+
 6 /\ 5 = 6
 6 \/ 5 = 5
 ```
@@ -23,15 +27,21 @@ Unicode with ASCII translation.
 # Vector Math
 
 Basic math operations applied to vectors are elementwise..
+If a scalar is used then the scalar applies to each element.
 
 ```apl
 1 2 3 + 1
 = 2 3 4 
 
-1 2 3 + 1 2 3
-= 2 4 6
-
 1 2 3 × 2 
+= 2 4 6
+```
+
+If a another vector is applied *of the same dimensions*
+then each element applies to the corresponding element.
+
+```apl
+1 2 3 + 1 2 3
 = 2 4 6
 
 1 2 3 × 1 2 3
