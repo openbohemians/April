@@ -2,13 +2,12 @@
 
 A new take on APL.
 
-Spaces are required.
-
-All objects are tensors.
-
-Unicode with ASCII translation.
-
-Built on Beam.
+* Spaces are required.
+* All objects are tensors.
+* Unicode with intuitive ASCII translations.
+* Pattern Matching.
+* Type System.
+* Built on Beam.
 
 # Basic Math
 
